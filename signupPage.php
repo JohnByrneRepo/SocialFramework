@@ -6,18 +6,34 @@
         
         <script type="text/javascript">
         
+        // On clicking on a form field, there are 2 outcomes:
+        // 1) The field still contains the default string, if so set caret position to beginning e.g. |Profile Name
+        // 2) The field has changed from it's default value, if so highlight the contents
+        
+        // On first keypress in a form field, always delete the contents
+        
+        
+        // Default registration form fields
+        var profileNameDefault = "Profile Name";
+        var firstNameDefault = "First Name";
+        var lastNameDefault = "Last Name";
+        var emailDefault = "Email Address";
+        var passwordDefault = "Password";
+        
+        
+        // Set caret position to beginning of this fields text but retain text (on click)
         $("#profileName").click(function(e){
             e.preventDefault();
             var txt = $("#profileName").val(); 
             if (txt === "Profile Name") setCaretPosition('profileName', 0);
         });
-        
-         
+           
         /*$("#profileName").keypress(function() {
             var txt = $("#profileName").val(); 
             if (txt.length === 0) $("#profileName").val("Profile Name");
         });*/
         
+        // Delete contents of form field if it still contains default value (on key press).
         $("#profileName").keypress(function() {
             var txt = $("#profileName").val(); 
             if (txt === "Profile Name") $("#profileName").val("");
