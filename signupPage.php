@@ -19,9 +19,14 @@
         var lastNameDefault = "Last Name";
         var emailDefault = "Email Address";
         var passwordDefault = "Password";
+        var regFormFieldDefaults = [profileNameDefault,
+                                    firstNameDefault,
+                                    lastNameDefault,
+                                    emailDefault,
+                                    passwordDefault,
+                                    ];
         
-        
-        // Set caret position to beginning of this fields text but retain text (on click)
+        // jQuery: Set caret position to beginning of this fields text but retain text (on click)
         $("#profileName").click(function(e){
             e.preventDefault();
             var txt = $("#profileName").val(); 
@@ -33,14 +38,14 @@
             if (txt.length === 0) $("#profileName").val("Profile Name");
         });*/
         
-        // Delete contents of form field if it still contains default value (on key press).
+        // jQuery: Delete contents of form field if it still contains default value (on key press).
         $("#profileName").keypress(function() {
             var txt = $("#profileName").val(); 
             if (txt === "Profile Name") $("#profileName").val("");
             //else if (txt.length === 0) $("#profileName").val("Profile Name");
         });
 
-        
+        // Sets the caret position to the beginning of a form field
         function setCaretPosition(elemId, caretPos) {
             var el = document.getElementById(elemId);
             if (el !== null) {
@@ -59,6 +64,7 @@
             }
         }
 
+        // Check to see if a form field content exists in the pre-populated PHP arrays
         function in_array(array, id) {
             for(var i=0; i<array.length; i++) {
                 if(array[i] === id) {
@@ -67,6 +73,10 @@
             }
             return false;
         }
+        
+        // Checks if the entered Email Address syntax is correct with a regular expression
+        // If this is passed, it then checks the availability of Profile Name and Email Address.
+        // TODO: Banned list of URLs in email, and add PHP hashing to password 
         
         function validateEmail() {
             var emailText = document.getElementById('email').value;
@@ -101,6 +111,7 @@
             }
         };
 
+        // Function fired when the Registration form is submitted.
         window.onload = function() {
             document.getElementById('regForm').onsubmit = validateEmail;
             //document.getElementById('profileName').onclick = setCaretPosition('profileName', 0);
