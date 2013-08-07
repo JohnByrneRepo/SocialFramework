@@ -4,7 +4,7 @@
         <?php include 'header.php'; ?>  
         <?php include 'signupPanel.php'; ?> 
         
-    <script type="text/javascript">
+        <script type="text/javascript">
         
         $("#profileName").click(function(e){
             e.preventDefault();
@@ -90,8 +90,7 @@
             //document.getElementById('profileName').onclick = setCaretPosition('profileName', 0);
         };
         
-        </script>        
-        
+        </script>             
     </head>
     <body>        
         <div id="validateFailMessage">&nbsp;</div>
