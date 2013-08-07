@@ -10,13 +10,13 @@ $dbsize2 = mysql_num_rows($result2);
     for($itm_count = 0; $itm_count < $dbsize2; $itm_count++)
     {
         $msgLookup = mysql_query("SELECT * FROM messages LIMIT " . $itm_count . ", " . $dbsize);
-        $rowData2 = mysql_fetch_assoc($msgLookup);
-        $content = $rowData2['content'];
+        $rowData = mysql_fetch_assoc($msgLookup);
+        $content = $rowData['content'];
         $id = $rowData2['uid'];
         if ($id == $uid) {
             echo '<tr>';
             $msgsReceived++;
-            $sid = $rowData2['sid'];
+            $sid = $rowData['sid'];
             $senderProfileNameLookup = mysql_query("SELECT * FROM users WHERE uid = '$sid'");
             $rowData3 = mysql_fetch_assoc($senderProfileNameLookup);
             $senderProfileName = $rowData3['profileName'];
