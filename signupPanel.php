@@ -25,8 +25,8 @@
     
     for($itm_count = 0; $itm_count < $dbsize; $itm_count++)
     {   
-        $emailLookup = mysql_query("SELECT * FROM users LIMIT " . $itm_count . ", " . $dbsize);
-        $rowData = mysql_fetch_assoc($emailLookup);
+        $rowLookup = mysql_query("SELECT * FROM users LIMIT " . $itm_count . ", " . $dbsize);
+        $rowData = mysql_fetch_assoc($rowLookup);
         $email = $rowData['email'];
         $profileName = $rowData['profileName'];
         $emailArray[$itm_count] = $email;
