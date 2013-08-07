@@ -1,7 +1,6 @@
 <div id="subHeading">Sign Up</div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-<form id="email_form" action="registrationPage.php" method="post">
+<form id="regForm" action="registrationPage.php" method="post">
     <div id="regProfileNameField"><input type="text" id="profileName" name="profileName" size="26" value="Profile Name"></div><br>
     <div id="regFirstNameField"><input type="text" name="firstName" size="26" value="First Name"></div><br>
     <div id="regLastNameField"><input type="text" name="lastName" size="26" value="Last Name"></div>
