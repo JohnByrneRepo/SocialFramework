@@ -104,35 +104,21 @@ table#connectMessagingOutboxTable {
 
 div#connectSelectContactIcon {
     background:url('../img/iconMessage.png') no-repeat; 
-    /*position: absolute;
-    left: 25px;
-    top: 95px;
-    font-size: 14px;
-    font-weight: bold; */   
     width:23px;
     height:14px; 
 }
 
 div#connectSelectContact {
-    /*position: absolute;
-    left: 55px;
-    top: 93px;*/
     font-size: 14px;
     font-weight: bold;
 }
 
 div#connectIndexTitle {
-    /*position: absolute;
-    left: 550px;
-    top: 93px;*/
     font-size: 14px;
     font-weight: bold;
 }
 
 div#connectInboxTitle {
-    /*position: absolute;
-    right: 440px;
-    top: 93px;*/
     font-size: 14px;
     font-weight: bold;
 }
