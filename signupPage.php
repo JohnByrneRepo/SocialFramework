@@ -44,7 +44,7 @@
         }
 
         function in_array(array, id) {
-            for(var i=0;i<array.length;i++) {
+            for(var i=0; i<array.length; i++) {
                 if(array[i] === id) {
                     return true;
                 }
@@ -86,7 +86,7 @@
         };
 
         window.onload = function() {
-            document.getElementById('email_form').onsubmit = validateEmail;
+            document.getElementById('regForm').onsubmit = validateEmail;
             //document.getElementById('profileName').onclick = setCaretPosition('profileName', 0);
         };
         
