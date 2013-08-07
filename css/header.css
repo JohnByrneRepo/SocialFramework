@@ -1,0 +1,22 @@
+/* Header bar */
+
+div#headerBar {
+    position:absolute;
+    left:-6px;
+    top:-10px;
+}
+
+div#headerBarLower {
+    width: 2000px;
+    height: 21px;
+    background: #dddddd;
+    position: absolute;
+    top: 58px;
+    left: -8px;
+}
+
+div#headerLogo {
+    position: absolute;
+    left: 120px;
+    top: 14px;
+}

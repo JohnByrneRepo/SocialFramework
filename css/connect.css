@@ -1,0 +1,152 @@
+#pagewrap {
+    width: 94%;
+    position:relative;
+}
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+li {
+    display:inline;
+}
+
+div#connectMain {
+    background:url('../img/connectMain.png') no-repeat; 
+    position:absolute;
+    left: 12px;
+    top: 58px;
+    display:block;
+    width:68px;
+    height:20px;   
+}
+
+div#connectArrow {
+    background:url('../img/connectArrow.png') no-repeat; 
+    position:absolute;
+    left: 80px;
+    top: 58px;
+    display:block;
+    width:24px;
+    height:20px;    
+}
+
+table#connectTableTitlesTable {
+    position:relative;
+    top:-30px;
+}
+
+table#connectTableGrid {
+    position:relative;
+    top:-30px;
+}
+
+table#connectMessagingRecipientTable {
+    display:block;
+    overflow-y:scroll;
+    border:0px;
+    height:400px;
+    background-color: #cccccc;
+}
+
+td#connectMessagingRecipientTable {
+    width:95px;
+    text-align:center;
+    border-color:#dddddd;
+    word-wrap:break-word;
+    background-color: #dddddd;
+}
+
+td#connectMessagingRecipientPadding {
+    text-align:center;
+    border:0px;
+    padding: 0px;
+    display:none;
+}
+
+table#connectMessagingIndexTable {
+    display:block;
+    overflow-y:scroll;
+    border:0px;
+    height:400px;  
+}
+
+td#connectMessagingIndexTable {
+    width:150px;
+    border:0px;
+}
+
+table#connectMessagingInboxTable {
+    background-color: #dddddd;
+    display:block;
+    overflow-y:scroll;
+    border:0px;
+    height:180px;      
+    table-layout: fixed;
+}
+
+td#connectMessagingInboxTable {
+    border:0px;
+    border:2px solid;
+    border-color: #dddddd;
+    background-color: #eeeeee;
+    display:block;
+}
+
+table#connectMessagingOutboxTable {
+    position: absolute;
+    top: 400px;
+    right: 211px;
+    width:280px;
+}
+
+div#connectSelectContactIcon {
+    background:url('../img/iconMessage.png') no-repeat; 
+    /*position: absolute;
+    left: 25px;
+    top: 95px;
+    font-size: 14px;
+    font-weight: bold; */   
+    width:23px;
+    height:14px; 
+}
+
+div#connectSelectContact {
+    /*position: absolute;
+    left: 55px;
+    top: 93px;*/
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div#connectIndexTitle {
+    /*position: absolute;
+    left: 550px;
+    top: 93px;*/
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div#connectInboxTitle {
+    /*position: absolute;
+    right: 440px;
+    top: 93px;*/
+    font-size: 14px;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}

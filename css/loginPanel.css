@@ -1,0 +1,80 @@
+/* 
+    Document   : loginPanel
+    Created on : 27-Jul-2013, 21:41:09
+    Author     : Barnaby
+*/
+
+root { 
+    display: block;
+}
+
+/* Login panel form field headings */
+
+div#loginPanelEmailFieldHeading {
+    position:absolute;
+    right: 555px;
+    top: 7px;   
+    color:#ffffff;
+    /*font-weight: bold;*/
+}
+
+div#loginPanelPasswordFieldHeading {
+    position:absolute;
+    right: 363px;
+    top: 7px;   
+    color:#ffffff;
+    /*font-weight: bold;*/
+}
+
+/* Login panel form fields */
+
+div#loginPanelEmailField {
+    position:absolute;
+    right:420px;
+    top:18px;   
+    color:#ffffff;
+    padding:4px;
+}
+
+div#loginPanelPasswordField {
+    position:absolute;
+    right:250px;
+    top:18px;   
+    color:#ffffff;
+    padding:4px;
+}
+
+/* Login panel buttons */
+
+.loginPanelLoginButton {
+    background:url('../img/loginButton.png') no-repeat; 
+    position:absolute;
+    right: 170px;
+    top: 20px;
+    display:block;
+    width:65px;
+    height:20px;
+    border: 0px;
+}
+
+.loginPanelLoginButton:hover {
+    background:url('../img/loginButtonHover.png') no-repeat; 
+    cursor:pointer;
+}
+
+div#loginPanelRegisterButton {
+    background:url('../img/registerButton.png') no-repeat; 
+    position:absolute;
+    right: 90px;
+    top: 20px;
+    display:block;
+    /*margin:0;
+    padding:0;*/
+    width:65px;
+    height:20px;
+}
+
+div#loginPanelRegisterButton:hover {
+    background:url('../img/registerButtonHover.png') no-repeat; 
+    cursor:pointer;
+}

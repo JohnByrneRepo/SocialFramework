@@ -1,0 +1,83 @@
+a.controlPanelArrow {
+    background:url('../img/optionsArrow.png') no-repeat; 
+    position:absolute;
+    right: 38px;
+    top: 20px;
+    display:block;
+    width:24px;
+    height:20px; 
+    cursor:pointer;
+}
+
+div#controlPanelOptionsMain {
+    background:url('../img/optionsMain.png') no-repeat; 
+    position:absolute;
+    right:170px;
+    top: 20px;
+    display:block;
+    width:68px;
+    height:20px;   
+}
+
+div.controlPanelDropdown {
+    color: #555;
+    margin: 3px -22px 0 0;
+    position: absolute;
+    width: 143px;
+    right: 130px;
+    top: -3px;
+    height: 17px;
+    text-align: left;
+}
+
+div.controlPanelSubmenu
+{
+    background: #fff;
+    position: absolute;
+    top: 41px;
+    right: 30px;
+    z-index: 100;
+    width: 135px;
+    display: none;
+    margin-left: 10px;
+    /*border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);*/
+}
+
+.controlPanelDropdown  li a { 
+    color: #555555;
+    display: block;
+    font-family: arial;
+    font-weight: bold;
+    padding: 6px 15px;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.controlPanelDropdown li a:hover{
+    background:#155FB0;
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+
+div#controlPanelIconMessage {
+    background:url('../img/iconMessage.png') no-repeat; 
+    position:absolute;
+    right: 250px;
+    top: 23px;
+    display:block;
+    margin:0;
+    padding:0;
+    width:23px;
+    height:14px;   
+} 
+
+div#controlPanelIconMessage:hover {
+    background:url('../img/iconMessageHover.png') no-repeat; 
+    display:block;
+    margin:0;
+    padding:0;
+    width:23px;
+    height:14px; 
+    cursor:pointer;  
+}  
