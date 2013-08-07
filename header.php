@@ -6,6 +6,5 @@
 <link rel="stylesheet" type="text/css" href="css/loginPanel.css">
 <link rel="stylesheet" type="text/css" href="css/controlPanel.css">
 <link rel="stylesheet" type="text/css" href="css/header.css">
-<br><br><br><br><br><br>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
